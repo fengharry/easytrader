@@ -30,10 +30,10 @@ def findWindowSubwindowEqualText(tt):
 
 class GJClientTrader():
     def __init__(self):
-        self.LoginTitle = ['用户登录']
-        self.Title = '网上股票交易系统5.0'
+        self.LoginTitle = ['用户登录'.encode('gbk')]
+        self.Title = '网上股票交易系统5.0'.encode('gbk')
 
-    def prepare(self, config_path=None, user=None, password=None, exe_path='C:\\全能行证券交易终端\\xiadan.exe'):
+    def prepare(self, config_path=None, user=None, password=None, exe_path='C:\\全能行证券交易终端\\xiadan.exe'.encode('gbk')):
         """
         登陆银河客户端
         :param config_path: 银河登陆配置文件，跟参数登陆方式二选一
