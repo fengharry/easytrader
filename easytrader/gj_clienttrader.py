@@ -262,7 +262,7 @@ class GJClientTrader():
         try:
             win32gui.SendMessage(self.sell_stock_code_hwnd, win32con.WM_SETTEXT, None, stock_code)  # 输入卖出代码
             win32gui.SendMessage(self.sell_price_hwnd, win32con.WM_SETTEXT, None, price)  # 输入卖出价格
-            win32gui.SendMessage(self.sell_price_hwnd, win32con.BM_CLICK, None, None)  # 输入卖出价格
+            #win32gui.SendMessage(self.sell_price_hwnd, win32con.BM_CLICK, None, None)  # 输入卖出价格
             time.sleep(0.2)
             win32gui.SendMessage(self.sell_amount_hwnd, win32con.WM_SETTEXT, None, amount)  # 输入卖出数量
             time.sleep(0.2)
